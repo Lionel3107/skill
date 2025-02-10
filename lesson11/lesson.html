@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operator</title>
+</head>
+<body>
+    <h1>Logical Operator</h1>
+    <script>
+        /* Logical Operator OR || */
+
+        let hour = prompt("What time is it?", 10);
+        if (hour < 10 || hour > 10) {
+            alert("It's time to work that motherfucker");
+        }
+
+        /* Logical Operator AND && */
+
+        let heure = 12;
+        let minutes = 20;
+        if (heure == 12 && minutes == 30) {
+            alert("Wake up my friend, it's 12h30");
+        } else {
+            alert("Don't worry, it doesn't matter");
+        }
+
+        // ============ Exercise ============== //
+
+        let age = prompt("What is your age guys");
+
+        if (age <= 14 && age >= 20) {
+            alert("It's OK for you. You must make money now");
+        }
+
+        let userName = prompt("What is your name? ",);
+
+        if(userName == 'Admin'){
+            let pass = prompt('Enter a password please');
+            if (pass == 'TheMaster') {
+                alert("Welcome");
+            } else if (pass === "" || pass == null ){
+                alert("Cancelled");
+            } else {
+                alert("You're Wrong");
+            }
+        } else if (userName === "" || userName == null) {
+            alert("Canceled");
+        } else {
+            alert("I don't know you");
+        }
+    </script>
+</body>
+</html>

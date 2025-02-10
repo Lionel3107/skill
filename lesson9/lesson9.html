@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparaison</title>
+</head>
+<body>
+    <h1>Comparaison</h1>
+    <script>
+        // Boolean is the result
+
+        /*
+        True means YES
+        False means NO
+        */
+
+        alert(2 > 1); // true
+        alert(2 == 1); // false
+        alert(2 != 3); // true
+
+        let result = 5 > 4; // assign the result of the comparison
+        alert( result ); // true
+
+        // STRING comparaison
+
+        alert('Z' > 'A') // True
+        alert( 'Glow' > 'Glee' ); // true
+        alert( 'Bee' > 'Be' ); // true
+
+
+        // Comparaison with diffrent type
+        alert( true == 1 ); // true
+        alert( false == 0 ); // true
+
+        // A funny consequence
+
+        /*
+        It is possible that are the same time:
+        Two values are equal
+        One of them is true as a Boolean and the other is false as a boolean
+
+        */
+
+        let a = 0;
+        alert(Boolean(a)); // true
+
+        let b = '0';
+        alert(Boolean(b)); // true
+
+        alert(a == b); // true
+
+
+        // Strick Equality Operator
+        alert(0 == false); // true
+
+        alert('' == false); // true
+
+        // Strick Equality Operator '==='
+        alert( 0 === false ); // false, because the types are different
+        // Comparaison with Null and Undefined
+        alert(null === undefined); // false
+
+        alert(null == undefined); // true
+        
+
+    </script>
+</body>
+</html>
